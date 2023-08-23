@@ -19,14 +19,16 @@
   <title>MY OTT</title>
   <style>
     nav {
-      height: 70px;
+      height: 100px;
       width: 100%;
       background-color: dodgerblue;
       /* background-image: linear-gradient(dodgerblue,red,blue,green); */
       background: rgb(red, green, blue);
 
       display: flex;
+      /* position: fixed; */
       align-items: center;
+      /* position: fixed; */
     }
     .cpr{
       width: 100%;
@@ -61,7 +63,7 @@
       filter: blur(1px);
     }
     .freqently{
-      width: 100%;
+      width: 80%;
       height: 100vh;
       display:flex;
       align-items: center;
@@ -69,69 +71,95 @@
       flex-wrap: wrap;
     }
     .freqently img{
-      width: 250px;
+      width: 270px;
       height: 400px;
     }
     
     .frequent-img img{
       width:250px;
       height: 400px;
+      padding: 5px;
     }
       .corousal-inner img{
-         width: 90%;
-         height: 550px; 
+         height: -200px;
+         width: 100%; 
       }
+      .frequent-img img:hover{
+        transform: translate(-5px);
+        scale:1.2;
+        filter: drop-shadow(8px);
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
+      }
+
     .corousal-inner{
-      margin: 20px, 0px, 0px, 120px;
+      margin: -20px, 0px, 0px, 120px;
     }
-    .corousal-control-prev-icon{
+    /*.corousal-control-prev-icon{
       position: relative;
       left: 100px;
     }
     .corousal-control-next-icon{
       position: relative;
       right: 100px;
-    }
+    } */
 
     #carouselExampleAutoplaying{
-      width: 90%;
-      height: 800px;
-      margin-left: 80px;
-      margin-top: 80px;
+      width: 100%;
+      height: 600px;
+      background-color: aquamarine;
     }
 
     #carouselExampleAutoplaying img {
-      width: 100%;
-      height: 800px;
-}   
- .recent-img{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-       }
       
-.rated-img{
- /* display: flex; */
-flex-wrap: wrap;
-justify-content: space-around;
-margin-left: 50px;
-}
-h2{
-text-align: left;
-}
-.footer{
-  display: flex;
-  justify-content: space-evenly;
-  background-color:aquamarine ;
-}
-.footer h1{
-  font-size: 30px;
-}
-.apps img{
-  width: 40px;
-  margin-right: 20px;
-}
+      height: 600px;
+      width: 100%
+}   
+ .recent-img img{
+      width:250px;
+      height: 400px;
+      padding: 5px;
+        
+       }
+       .recent-img img:hover{
+        transform: translate(-5px);
+        scale:1.2;
+        filter: drop-shadow(8px);
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
 
+       }
+
+      
+        .rated-img img{
+          width:250px;
+          height: 400px;
+          padding: 5px;
+                      
+        }
+        .rated-img img:hover{
+          transform: translate(-5px);
+          scale:1.2;
+          filter: drop-shadow(8px);
+          transition: all .5s ease-in-out;
+          border-radius: 5px;
+          }
+                
+
+        .footer{
+          display: flex;
+          justify-content: space-evenly;
+          background-color:aquamarine ;
+        }
+        .footer h1{
+          font-size: 40px;
+        }
+        .apps img{
+          height: 50px;
+          width: 50px;
+          margin-right: 20px;
+        }
+        
 
 
     </style>
@@ -152,18 +180,18 @@ text-align: left;
       <img src="C:\Users\M.Jagadeesh\Desktop\oTT\ICON.jpeg" alt="">
     </div>
     <div class="nav-items">
-      <a href="">Home</a>
-      <a href="">Frequently Watched</a>
-      <a href="">Recently Released</a>
-      <a href="">Top Rated</a>
-      <a href="">Favorites</a>
-      <a href="">About</a>
-      <a href="">Signup/Signin</a>
+      <a href="#home">Home</a>
+      <a href="#freq">Frequently Watched</a>
+      <a href="#rece">Recently Released</a>
+      <a href="#rated">Top Rated</a>
+      <a href="#fav">Favorites</a>
+      <a href="#about">About</a>
+      <a href="sigin.html">Signup/Signin</a>
     </div>
   </nav>
   <!-- home section stars -->
 
-  <div class="cor">
+  <div class="cor" id="home">
     <div id="carouselExampleAutoplaying" class="carousel slide"data-bs-ride="carousel" data-bs-interval="2000">
       <div class="cousel-arinner">
         <div class="carousel-item active">
@@ -199,18 +227,18 @@ text-align: left;
     <div class="frequent" id="freq"></div>
     <h2>freqenttly watched</h2>
     <div class="frequent-img">
-      <img src="images.jpeg" alt="">
-      <img src="6.jpg" alt="">
-      <img src="95459943.webp" alt="">
-      <img src="101031011.webp" alt="">
-      <img src="54600548.webp" alt="">
-      <img src="4.jpg" alt="">
-      <img src="adipurush.jpg" alt="">
-      <img src="3.webp" alt="">
-      <img src="Sir-Movie-HD-Pics-2f1850e.jpg" alt="">
-      <img src="Siva-vision-for-Jr-NTR-new-look.jpg" alt="">
-      <img src="0-2x3 (13).jpg"alt="">
       <img src="0-2x3 (14).jpg" alt="">
+      <img src="0-2x3 (13).jpg" alt="">
+      <img src="0-2x3 (18).jpg" alt="">
+      <img src="0-2x3 (19).jpg" alt="">
+      <img src="0-2x3 (20).jpg" alt="">
+      <img src="0-2x3 (21).jpg" alt="">
+      <img src="0-2x3 (15).jpg" alt="">
+      <img src="0-2x3 (11).jpg" alt="">
+      <img src="0-2x3 (16).jpg" alt="">
+      <img src="0-2x3 (10).jpg" alt="">
+      <img src="0-2x3 (13).jpg"alt="">
+      <img src="0-2x3 (18).jpg" alt="">
     </div>
   <!--frequently section ends-->
 
@@ -283,7 +311,7 @@ text-align: left;
     <p>Visit help centter</p>
     <p>Share feedback</p>
   </div>
-  <div class="apps">
+  <div class="apps" id="about">
     <h1>Connect with us</h1>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="">
